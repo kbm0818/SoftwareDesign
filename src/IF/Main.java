@@ -8,15 +8,15 @@ public class Main {
 	{
 		int n;
 		
-		System.out.println("1. »óÇ°¸ñ·Ï");
-		System.out.println("2. ¹°Ç°µî·Ï");
-		System.out.println("3. ·Î±×¾Æ¿ô");
+		System.out.println("1. ìƒí’ˆëª©ë¡");
+		System.out.println("2. ë¬¼í’ˆë“±ë¡");
+		System.out.println("3. ë¡œê·¸ì•„ì›ƒ");
 		
 		Scanner input = new Scanner(System.in);
 		
 		while(true)
 		{
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			n = input.nextInt();
 			if(n == 1)
 			{
@@ -28,12 +28,12 @@ public class Main {
 			}
 			else if(n == 3)
 			{
-				System.out.println("·Î±×¾Æ¿ô!");
-				break;
+				System.out.println("ë¡œê·¸ì•„ì›ƒ!");
+				System.exit(0);
 			}
 			else
 			{
-				System.err.println("1 ~ 3 »çÀÌÀÇ ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+				System.err.println("1 ~ 3 ì‚¬ì´ì˜ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 			}
 		}
 	}
@@ -42,25 +42,25 @@ public class Main {
 	{
 			String name;
 			int price;
-			System.out.println("<< ¹°Ç° µî·Ï >>");
+			System.out.println("<< ë¬¼í’ˆ ë“±ë¡ >>");
 			Scanner input = new Scanner(System.in);
-			System.out.print("¹°Ç° ÀÌ¸§ : ");
+			System.out.print("ë¬¼í’ˆ ì´ë¦„ : ");
 			name = input.next();
-			System.out.print("Èñ¸Á ¸¶ÀÏ¸®Áö : ");
+			System.out.print("í¬ë§ ë§ˆì¼ë¦¬ì§€ : ");
 			price = input.nextInt();
 			
-			System.out.println("½ÅÃ»ÀÌ ¿Ï·á µÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì‹ ì²­ì´ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			main(null);
 	}
 	public static void GList()
 	{
 			int n;
 			
-			System.out.println("<< »óÇ° ¸ñ·Ï >>");
-			System.out.println("¸¶ÀÏ¸®Áö : ");
+			System.out.println("<< ìƒí’ˆ ëª©ë¡ >>");
+			System.out.println("ë§ˆì¼ë¦¬ì§€ : ");
 			Scanner input = new Scanner(System.in);
-			System.out.println("--------- »óÇ° ¸ñ·Ï ---------");
-			System.out.print("±¸¸Å ¹øÈ£ ÀÔ·Â (0 ÀÔ·Â½Ã ¸ŞÀÎ¸Ş´º·Î) : ");
+			System.out.println("--------- ìƒí’ˆ ëª©ë¡ ---------");
+			System.out.print("êµ¬ë§¤ ë²ˆí˜¸ ì…ë ¥ (0 ì…ë ¥ì‹œ ë©”ì¸ë©”ë‰´ë¡œ) : ");
 			n = input.nextInt();
 			if(n==0)
 			{
@@ -76,26 +76,26 @@ public class Main {
 		
 		String c;
 
-		System.out.printf("%d¹øÂ° ¹°Ç° ÀÌ¸§ : \n", n);
-		System.out.println("¸¶ÀÏ¸®Áö : ");
+		System.out.printf("%dë²ˆì§¸ ë¬¼í’ˆ ì´ë¦„ : \n", n);
+		System.out.println("ë§ˆì¼ë¦¬ì§€ : ");
 			
 		Scanner input = new Scanner(System.in);
-		System.out.println("\n±¸¸Å (Y/N) : ");
+		System.out.println("\nêµ¬ë§¤ (Y/N) : ");
 		c=input.next();
 		while(true)
 		{
 			if(c.compareTo("Y") == 0 || c.compareTo("y") == 0)
 			{
-				System.out.printf("%d¹øÂ° ¹°Ç°À» ±¸¸ÅÇÏ¼Ì½À´Ï´Ù.\n", n);
+				System.out.printf("%dë²ˆì§¸ ë¬¼í’ˆì„ êµ¬ë§¤í•˜ì…¨ìŠµë‹ˆë‹¤.\n", n);
 				GList();
 			}
 			else if(c.compareTo("N") == 0|| c.compareTo("n") == 0)
 			{	
-				System.out.println("»óÇ° ¸ñ·ÏÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.");
+				System.out.println("ìƒí’ˆ ëª©ë¡ìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
 				GList();
 			}
 			else
-				System.out.println("´Ù½Ã ÀÔ·ÂÇÏ½Ã¿À.");
+				System.out.println("ë‹¤ì‹œ ì…ë ¥í•˜ì‹œì˜¤.");
 		}
 		
 	}
